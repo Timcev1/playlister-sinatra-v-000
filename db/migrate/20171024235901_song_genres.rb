@@ -7,4 +7,3 @@ class SongGenres < ActiveRecord::Migration
     end
   end
 end
-
