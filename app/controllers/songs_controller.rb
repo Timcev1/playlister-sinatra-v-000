@@ -47,3 +47,4 @@ get '/songs' do
     redirect "/songs/#{@song.slug}"
   end
 end
+end
