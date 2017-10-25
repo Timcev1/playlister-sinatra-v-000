@@ -9,13 +9,13 @@ class Genre < ActiveRecord::Base
     end
 
     def self.find_by_slug(slug)
-      genre = ""
+      match = ""
 
       self.all.each do |genre|
         if genre.slug == slug
-           genre = genre
+           genre = match
         end
       end
-      genre
+      match
     end
  end 
