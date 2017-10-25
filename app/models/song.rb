@@ -7,7 +7,7 @@ class Song < ActiveRecord::Base
     self.name.downcase.split(" ").join("-")
   end
 
-  
+
   def self.find_by_slug(slug)
     match = ""
     self.all.each do |song|
