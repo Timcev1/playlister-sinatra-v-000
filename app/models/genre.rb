@@ -13,7 +13,7 @@ class Genre < ActiveRecord::Base
 
       self.all.each do |genre|
         if genre.slug == slug
-           genre = match
+           match = genre
         end
       end
       match
