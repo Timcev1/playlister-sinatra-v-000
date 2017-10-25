@@ -8,13 +8,13 @@ class Artist < ActiveRecord::Base
     end
 
     def self.find_by_slug(slug)
-      artist = ""
+      match = ""
 
       self.all.each do |artist|
         if artist.slug == slug
-           artist = artist
+           match = artist
         end
       end
-      artist
+      match
     end
  end 
